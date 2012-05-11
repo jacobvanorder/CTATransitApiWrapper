@@ -8,7 +8,7 @@ Usage
 
 I've included a sample iOS to show what you can do but there are two steps. 
 
-* create an instance of SGCTATrainTool with +(id)trainToolWithApiKey:(NSString *)incomingApiKey
+* create an instance of SGCTATrainTool with `+(id)trainToolWithApiKey:(NSString *)incomingApiKey`
 * use either `-(void)getCTAInfoForStopID:(NSString *)stopID andMaxResponses:(int)maxResponses withCallback:(void (^)(SGTrainResponse *, NSError *))trainHandler` or `-(void)getCTAInfoForMapID:(NSString *)mapID andMaxResponses:(int)maxResponses withCallback:(void (^)(SGTrainResponse *, NSError *))trainHandler` to get the response in the form of a SGTrainResponse object.
 
 If you want to use your own Network service, you can just use `SGTrainResponseGenerator` with `+ (SGTrainResponse *)trainResponseFromXMLData:(NSData *)xmlData` to get a SGTrainResponse object.
