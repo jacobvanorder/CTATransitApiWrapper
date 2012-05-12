@@ -13,7 +13,7 @@ I've included a sample iOS to show what you can do but there are two steps.
 
 If you want to use your own Network service, you can just use `SGTrainResponseGenerator` with `+ (SGTrainResponse *)trainResponseFromXMLData:(NSData *)xmlData` to get a SGTrainResponse object.
 
-Need to more about the [CTA Train Api](http://www.transitchicago.com/developers/ttdocs/default.aspx)?
+Need to know more about the [CTA Train Api](http://www.transitchicago.com/developers/ttdocs/default.aspx)?
 
 
  
