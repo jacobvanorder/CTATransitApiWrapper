@@ -14,6 +14,7 @@
 				764BC91715712DDD002C4942 /* ShellScript */,
 			);
 			dependencies = (
+				7685B62C157E5F7500A2DA9B /* PBXTargetDependency */,
 			);
 			name = "CTATransitApiWrapper-Universal";
 			productName = "CTATransitApiWrapper-Universal";
@@ -51,7 +52,18 @@
 		764BC92015712F43002C4942 /* SGCTATrainTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 764001E5155B26E300C25534 /* SGCTATrainTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		764BC92115712F45002C4942 /* SGTrainResponseGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 764008C6155BEFFE00C25534 /* SGTrainResponseGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7692E2F0155C8560009B89B4 /* sushiGrassStickerLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7692E2EF155C8560009B89B4 /* sushiGrassStickerLogo.png */; };
+		76A67121157403930068DE64 /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 764008C1155BEE9F00C25534 /* GDataXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7685B62B157E5F7500A2DA9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 764001B8155B264500C25534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 764BC8FE15712BB9002C4942;
+			remoteInfo = CTATransitApi;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		764001C1155B264500C25534 /* CTATransitApiWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTATransitApiWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +268,7 @@
 				764BC91D15712F31002C4942 /* NSDate+CTADate.h in Headers */,
 				764BC91E15712F3E002C4942 /* SGTrainResponse.h in Headers */,
 				764BC91F15712F40002C4942 /* SGTrain.h in Headers */,
+				76A67121157403930068DE64 /* GDataXMLNode.h in Headers */,
 				764BC92015712F43002C4942 /* SGCTATrainTool.h in Headers */,
 				764BC92115712F45002C4942 /* SGTrainResponseGenerator.h in Headers */,
 			);
@@ -390,6 +403,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7685B62C157E5F7500A2DA9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 764BC8FE15712BB9002C4942 /* CTATransitApi */;
+			targetProxy = 7685B62B157E5F7500A2DA9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		764001CE155B264500C25534 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -502,6 +523,7 @@
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /headers;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -515,6 +537,7 @@
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /headers;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -547,6 +570,7 @@
 				764BC8FA15712B64002C4942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		764BC90715712BB9002C4942 /* Build configuration list for PBXNativeTarget "CTATransitApi" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +579,7 @@
 				764BC90915712BB9002C4942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
